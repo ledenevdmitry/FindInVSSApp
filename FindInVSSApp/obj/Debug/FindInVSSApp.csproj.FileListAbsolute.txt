@@ -1,0 +1,11 @@
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\bin\Debug\FindInVSSApp.exe.config
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\bin\Debug\FindInVSSApp.exe
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\bin\Debug\FindInVSSApp.pdb
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\obj\Debug\FindInVSSApp.csprojAssemblyReference.cache
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\obj\Debug\FindInVSSApp.AddRootsForm.resources
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\obj\Debug\FindInVSSApp.MainForm.resources
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\obj\Debug\FindInVSSApp.Properties.Resources.resources
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\obj\Debug\FindInVSSApp.csproj.GenerateResource.cache
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\obj\Debug\FindInVSSApp.csproj.CoreCompileInputs.cache
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\obj\Debug\FindInVSSApp.exe
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\obj\Debug\FindInVSSApp.pdb
