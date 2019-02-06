@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -72,7 +73,9 @@ namespace FindInVSSApp
         public IEnumerable<string> AllInEntireBase(string root, List<string> matches, Regex pattern, int depth)
         {
             Queue<Tuple<VSSItem, int>> queue = new Queue<Tuple<VSSItem, int>>();
-            queue.Enqueue(new Tuple<VSSItem, int>(vssDatabase.get_VSSItem(root, false), 0));
+            VSSItem rootItem = vssDatabase.get_VSSItem(root, false);
+            queue.Enqueue(new Tuple<VSSItem, int>(rootItem, 0));
+
             while (queue.Count > 0)
             {
                 Tuple<VSSItem, int> currItem = queue.Dequeue();
@@ -92,8 +95,8 @@ namespace FindInVSSApp
                         }
                     }
                 }
+                Marshal.ReleaseComObject(currItem.Item1);
             }
-            throw new ArgumentException("File Not Found");
         }
 
         public string FirstInEntireBase(string root, ref string match, Regex pattern, int depth)
@@ -119,7 +122,9 @@ namespace FindInVSSApp
                         }
                     }
                 }
+                Marshal.ReleaseComObject(currItem.Item1);
             }
+
             throw new ArgumentException("File Not Found");
         }
 
@@ -128,9 +133,12 @@ namespace FindInVSSApp
             return pattern.IsMatch(item.Name);
         }
 
+        /*
         public delegate void MoveDelegate(string movingFolderName, VSSItem movingFolder);
         public event MoveDelegate AfterMove;
         static ReaderWriterLockSlim rwl = new ReaderWriterLockSlim();
+
+        */
 
         /*
         public override void Move(string destination, IEnumerable<string> items)
@@ -223,6 +231,7 @@ namespace FindInVSSApp
         public void Close()
         {
             vssDatabase.Close();
+            Marshal.ReleaseComObject(vssDatabase);
         }
     }
 }

@@ -15,12 +15,12 @@ namespace FindInVSSApp
         public AddRootsForm()
         {
             InitializeComponent();
-            TbRoots.Text = Properties.Settings.Default.roots;
+            TbRoots.Text = IniUtils.GetConfig("Settings", "Roots");
         }
 
         private void BtConfirm_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.roots = TbRoots.Text;
+            IniUtils.SetConfig("Settings", "Roots", TbRoots.Text.Replace(Environment.NewLine, "|"));      
             Close();
         }
     }

@@ -9,3 +9,6 @@ C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\obj\Debug\FindInVSSApp.
 C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\obj\Debug\FindInVSSApp.csproj.CoreCompileInputs.cache
 C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\obj\Debug\FindInVSSApp.exe
 C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\obj\Debug\FindInVSSApp.pdb
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\bin\Debug\INIFileParser.dll
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\bin\Debug\INIFileParser.xml
+C:\Users\dledenev\source\repos\FindInVSSApp\FindInVSSApp\obj\Debug\FindInVSSApp.csproj.CopyComplete

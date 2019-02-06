@@ -25,25 +25,13 @@ namespace FindInVSSApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\\\\bivss-dmz\\DWH")]
-        public string vssBase {
-            get {
-                return ((string)(this["vssBase"]));
-            }
-            set {
-                this["vssBase"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string roots {
+        public string ConfigName {
             get {
-                return ((string)(this["roots"]));
+                return ((string)(this["ConfigName"]));
             }
             set {
-                this["roots"] = value;
+                this["ConfigName"] = value;
             }
         }
     }

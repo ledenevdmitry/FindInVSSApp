@@ -12,12 +12,12 @@ namespace FindInVSSApp
 
         public Finder()
         {
-            vss = new VSS(Properties.Settings.Default.vssBase, Environment.UserName);
+            vss = new VSS(IniUtils.GetConfig("Settings", "VSSBase"), Environment.UserName);
         }        
 
         public IEnumerable<string> GetRoots()
         {
-            return Properties.Settings.Default.roots.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            return IniUtils.GetConfig("Settings", "Roots").Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries);
         }
 
         public string FindOne(string pattern, int depth)
